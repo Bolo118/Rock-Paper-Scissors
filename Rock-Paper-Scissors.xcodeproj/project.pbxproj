@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1CEEC824A0607000FF825D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CEEC724A0607000FF825D /* DataModel.swift */; };
 		ECB75CBB249F2E3600727B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75CBA249F2E3600727B0C /* AppDelegate.swift */; };
 		ECB75CBD249F2E3600727B0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75CBC249F2E3600727B0C /* SceneDelegate.swift */; };
 		ECB75CBF249F2E3600727B0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75CBE249F2E3600727B0C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC1CEEC724A0607000FF825D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		ECB75CB7249F2E3600727B0C /* Rock-Paper-Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock-Paper-Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB75CBA249F2E3600727B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB75CBC249F2E3600727B0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC1CEEC624A0606000FF825D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECB75CBE249F2E3600727B0C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC1CEEC924A0607500FF825D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC1CEEC724A0607000FF825D /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC1CEECA24A0608200FF825D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECB75CC0249F2E3600727B0C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ECB75CAE249F2E3600727B0C = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +84,9 @@
 			children = (
 				ECB75CBA249F2E3600727B0C /* AppDelegate.swift */,
 				ECB75CBC249F2E3600727B0C /* SceneDelegate.swift */,
-				ECB75CBE249F2E3600727B0C /* ViewController.swift */,
-				ECB75CC0249F2E3600727B0C /* Main.storyboard */,
+				EC1CEEC624A0606000FF825D /* Controller */,
+				EC1CEECA24A0608200FF825D /* View */,
+				EC1CEEC924A0607500FF825D /* Model */,
 				ECB75CC3249F2E3800727B0C /* Assets.xcassets */,
 				ECB75CC5249F2E3800727B0C /* LaunchScreen.storyboard */,
 				ECB75CC8249F2E3800727B0C /* Info.plist */,
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB75CBF249F2E3600727B0C /* ViewController.swift in Sources */,
+				EC1CEEC824A0607000FF825D /* DataModel.swift in Sources */,
 				ECB75CBB249F2E3600727B0C /* AppDelegate.swift in Sources */,
 				ECB75CBD249F2E3600727B0C /* SceneDelegate.swift in Sources */,
 			);

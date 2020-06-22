@@ -1,0 +1,45 @@
+//
+//  ViewController.swift
+//  Rock-Paper-Scissors
+//
+//  Created by Adithep on 6/20/20.
+//  Copyright © 2020 Adithep. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var computerScore: UILabel!
+    @IBOutlet weak var playerScore: UILabel!
+    @IBOutlet weak var computerResult: UILabel!
+    @IBOutlet weak var playerResult: UILabel!
+    
+    @IBOutlet weak var rockButton: UIButton!
+    @IBOutlet weak var paperButton: UIButton!
+    @IBOutlet weak var scissorsButton: UIButton!
+    @IBOutlet weak var winnerLabel: UILabel!
+    
+    var data = DataModel()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func playerButtonPressed(_ sender: UIButton) {
+        
+        data.playerResult = self.playerResult
+        data.computerResult = self.computerResult
+        data.winnerLabel = self.winnerLabel
+        
+        data.player(sender)
+        data.computer()
+        data.winner()
+        
+        playerScore.text = String(data.playerScores)
+        computerScore.text = String(data.computerScores)
+    }
+    
+    
+}
+
