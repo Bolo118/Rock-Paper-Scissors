@@ -54,9 +54,9 @@ class ViewController: UIViewController {
         playerScore.text = String(data.playerScores)
         computerScore.text = String(data.computerScores)
         
-        data.playerResult.text = " "
-        data.computerResult.text = " "
-        data.winnerLabel.text = " "
+        data.playerResult?.text = " "
+        data.computerResult?.text = " "
+        data.winnerLabel?.text = " "
 
     }
     
